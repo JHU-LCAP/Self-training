@@ -104,7 +104,7 @@ def train(train_loader, model, optimizer, c_epoch, ema_model=None, mask_weak=Non
         # Weak BCE Loss
         target_weak = target.max(-2)[0]  # Take the max in the time axis
         if mask_weak is not None:
-            temp = consistency_criterion(weak_pred[mask_weak], target_weak[mask_weak])
+            temp = class_criterion(weak_pred[mask_weak], target_weak[mask_weak])
             weak_class_loss = temp.mean()
 
             if i == 0:
@@ -118,7 +118,7 @@ def train(train_loader, model, optimizer, c_epoch, ema_model=None, mask_weak=Non
 
         # Strong BCE loss
         if mask_strong is not None:
-            temp = consistency_criterion(strong_pred[mask_strong], target[mask_strong])
+            temp = class_criterion(strong_pred[mask_strong], target[mask_strong])
             strong_class_loss = temp.mean()
             meters.update('Strong loss', strong_class_loss.item())
 
