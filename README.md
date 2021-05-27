@@ -31,4 +31,4 @@ Step 3. run "main_plabel.py"
 
 
 # Citation
-S. Park, A. Bellur, D. K. Han, and M. Elhilali, "Self-training for sound event detection in audio mixtures," in proc. IEEE International Conference on Acoustics, Speech, and Signal Processing, (under review).
+S. Park, A. Bellur, D. K. Han, and M. Elhilali, "Self-training for sound event detection in audio mixtures," in proc. IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2021, pp. 341-345.
