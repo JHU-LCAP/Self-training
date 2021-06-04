@@ -1,7 +1,8 @@
 # Self-training network for sound event detection
-This is the implementation of self-training approach described in a paper "Self-Training for sound event detection in audio mixtures" submitted to ICASSP2021.
+This is the implementation of self-training approach described in a paper "Self-Training for sound event detection in audio mixtures" published in ICASSP2021.
 This approach was implemented based on a baseline for the task4 Sound Event Detection (SED) in DCASE challenge 2020.
 Original implementation can be found in https://github.com/turpaultn/dcase20_task4.
+- The next version of self-training is available in https://github.com/JHU-LCAP/CRSTmodel
 
 # Dependencies
 Python >= 3.6, pytorch >= 1.0, cudatoolkit>=9.0, pandas >= 0.24.1, scipy >= 1.2.1, pysoundfile >= 0.10.2, scaper >= 1.3.5, librosa >= 0.6.3, youtube-dl >= 2019.4.30, tqdm >= 4.31.1, ffmpeg >= 4.1, dcase_util >= 0.2.5, sed-eval >= 0.2.1, psds-eval >= 0.1.0, desed >= 1.1.7
